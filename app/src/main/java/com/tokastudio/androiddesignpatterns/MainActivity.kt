@@ -2,6 +2,7 @@ package com.tokastudio.androiddesignpatterns
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import com.tokastudio.androiddesignpatterns.builder.Hamburger
 
@@ -15,6 +16,6 @@ class MainActivity : AppCompatActivity() {
             .cheese(false)
             .tomatoes(true)
             .build()
-        hamburger.printData()
+        Log.d("logMainActivity",hamburger.showDetails())
     }
 }

@@ -23,10 +23,12 @@ class Hamburger private constructor(
         fun build()= Hamburger(bread,ham,cheese,tomatoes)
     }
 
-    fun printData(){
-        println("bread= $bread")
-        println("ham= $ham")
-        println("cheese= $cheese")
-        println("tomatoes $tomatoes")
+    fun showDetails(): String{
+        var res= ""
+        if (bread) res+= "Bread, "
+        if (ham) res+= "Ham, "
+        if (cheese) res+= "Cheese, "
+        if (tomatoes) res+= "Tomatoes, "
+        return res
     }
 }
